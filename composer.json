@@ -9,8 +9,7 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
-        "symfony/options-resolver": "~4.0"
+        "php": ">=7.1"
     },
     "require-dev": {
         "bossa/phpspec2-expect": "~3.0",
