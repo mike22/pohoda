@@ -178,7 +178,11 @@ abstract class Agenda
         $node = $xml->addChild($name, null, $this->_namespace($namespace));
 
         if (!\is_array($value)) {
-            $value = ['ids' => $value];
+            if($name == 'inv:number') {
+              $value = ['numberRequested' => $value];
+            } else {
+                $value = ['ids' => $value];
+            }
         }
 
         foreach ($value as $key => $value) {
